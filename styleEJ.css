@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  scroll-behavior: smooth;
+}
+header{
+  height: 100vh;
+  background-image: url(assets/lapras.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.buscar{
+    width: 100%;
+    height: 40vh;
+    background-image: url(assets/banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fInput{
+    margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #65379b;
+  width:60vw;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+.barrasup{
+    list-style: none;
+    
+}
+.head{
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.head p{
+    font-size:40px ;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.subtitle{
+    font-weight:500 ;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+.secUNO{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.secUNO img{
+    width: 30%;
+}
+.text1{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.text1 img{
+    width: 40px;
+    height: 40px;
+   }
+   .img{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+   }
+   .pie{
+       width: 100%;
+       height: 20vh;
+       background-color: blue;
+       overflow: hidden;
+   }
+.grid
+{
+    width: 40vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3rem;
+    grid-template-rows:2fr 2fr 3rem ;
+    border-radius: 6px;
+}
+.grid div{
+    background-color: #a6c1ee;
+}
+   footer img{
+width: 100%;
+height: 100%;
+size: cover;
+   }

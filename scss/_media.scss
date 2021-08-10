@@ -1,0 +1,134 @@
+@import "mixes";
+.contenedorMedia {
+  width: 80%;
+  margin: 40px auto;
+}
+.eN {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.eM {
+  height: 25vh;
+}
+.titMedia {
+  font-size: 120px;
+  font-weight: bold;
+  color: #65379b;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 60px 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.col1 {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.featureImg {
+  width: 90%;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.smallImgRow {
+  display: flex;
+  background: #886aea;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+  p {
+    margin-left: 20px;
+    color: black;
+    line-height: 22px;
+    font-size: 15px;
+  }
+}
+.smallImg {
+  position: relative;
+  img {
+    width: 150px;
+  }
+  .playBtm {
+    width: 35px;
+  }
+  .playBtmyt {
+    width: 35px;
+  }
+}
+.playBtm {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.playBtmyt {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+@for $i from 1 through 8 {
+  .ventana__videoplayer#{$i} {
+    @include contenedorVideo;
+  }
+}
+.close {
+  &:target {
+    @for $i from 1 through 8 {
+      .ventana__videoplayer#{$i} {
+        transform: rotate(-90deg) translate(150%, -230%);
+      }
+    }
+  }
+}
+video.focus {
+  outline: none;
+}
+iframe.focus {
+  outline: none;
+}
+.closeBtm {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+}
+.pokes {
+  width: 60%;
+  margin: auto;
+  height: 32vh;
+  .pokes__h5 {
+    color: #180f31;
+    transform: translate(0, -24vh);
+  }
+}
+.pokes__imgPoke {
+  transform: translate(290%, 0);
+  width: 15%;
+  height: 30vh;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+  background-image: url(../assets/open-pokeball.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}

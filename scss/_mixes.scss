@@ -1,0 +1,13 @@
+@mixin contenedorVideo{
+    width: 80%;
+	height: 80vh;
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	cursor: pointer;
+	transform: rotate(90deg) translate(-150%, 230%);
+	transition: all 600ms;
+	&:target {
+		transform: rotate(0deg) translate(0%, 0%);
+	}
+}

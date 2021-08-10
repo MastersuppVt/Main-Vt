@@ -1,0 +1,37 @@
+.secUno {
+	height: 90vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: linear-gradient( -225deg, #65379b 0%, #886aea 53%, #6457c6 100% );
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 1.5;
+	.secUno__img {
+		width: 25%;
+		z-index: -500;
+	}
+}
+.secUno__pRespuesta {
+	width: 45%;
+	text-align: center;
+}
+
+.secDos {
+	height: 90vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	line-height: 1.5;
+	#secDos__imagen {
+		width: 25%;
+	}
+}
+.secDos__sobre {
+	width: 45%;
+	text-align: center;
+}

@@ -1,0 +1,36 @@
+footer {
+	bottom: 0;
+	width: 100vw;
+	height: 15vh;
+	padding-bottom: 00.1px;
+}
+.pie {
+	bottom: 0;
+	width: 100vw;
+	height: 15vh;
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	background-image: url(../assets/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	p {
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		right: 30px;
+	}
+}
+.icoPie {
+	img {
+		margin-bottom: 15px;
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+		cursor: pointer;
+		width: 5vw;
+		height: 10vh;
+	}
+	position: absolute;
+	left: 0ch;
+	bottom: 0;
+}

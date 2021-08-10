@@ -1,0 +1,266 @@
+.contenedor {
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	padding: 0 0;
+}
+.logo {
+	position: fixed;
+	top: 40px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0, 0, 6px rgba(0, 0, 0, 0.5%);
+	z-index: 100;
+}
+.barra {
+	&:target {
+		.menu {
+			transform: translate(0%, 0);
+		}
+	}
+}
+#cerrar {
+	color: aqua;
+	&:hover {
+		color: #bf304a;
+	}
+}
+.menu {
+	font-size: 30px;
+	transform: translate(110%, 0);
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	background-image: linear-gradient( -225deg, #65379b 0%, #886aea 53%, #6457c6 100% );
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: 0, 0, 0 rgba(0, 0, 0, 0.5%);
+	z-index: 100;
+	transition: transform 0.3s ease-in-out;
+	a {
+		&:hover {
+			color: #bf304a;
+		}
+		text-decoration: none;
+		color: #558ed9;
+	}
+}
+.head {
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	video {
+		top: 0%;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		height: auto;
+	}
+}
+.enunciado1 {
+	position: absolute;
+	top: 35vh;
+	text-align: center;
+}
+#titulo {
+	font-size: 80px;
+	font-weight: bold;
+	color: #558ed9;
+	margin-bottom: 30px;
+}
+#video_background {
+	right: 0px;
+	z-index: -1000;
+	overflow: hidden;
+	filter: blur(6px);
+	height: 100vh;
+	position: absolute;
+}
+.secUno {
+	height: 90vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: linear-gradient( -225deg, #65379b 0%, #886aea 53%, #6457c6 100% );
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 1.5;
+	.img {
+		width: 25%;
+		z-index: -500;
+	}
+}
+.pRespuesta {
+	width: 45%;
+	text-align: center;
+}
+#fondo1 {
+	width: 100%;
+	position: absolute;
+	z-index: -1000;
+}
+.secDos {
+	height: 90vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	line-height: 1.5;
+	#imagen2 {
+		width: 25%;
+	}
+}
+.sobre {
+	width: 45%;
+	text-align: center;
+}
+#fondo2 {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	z-index: -1000;
+}
+.secTres {
+	height: 15vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	line-height: 1.5;
+}
+.secCuatro {
+	height: 90vh;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: linear-gradient( -225deg, #65379b 0%, #886aea 53%, #6457c6 100% );
+	line-height: 1.5;
+	.secCuatro__img {
+		width: 25%;
+	}
+}
+#secCuatro__text {
+	width: 45%;
+	text-align: center;
+}
+.secCinco {
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	line-height: 1.5;
+	iframe {
+		width: 35vw;
+		height: 30vh;
+	}
+}
+.esteNo {
+	height: 80vh;
+}
+.secSeis {
+	height: 100%;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	line-height: 1.5;
+	background-image: linear-gradient( -225deg, #65379b 0%, #886aea 53%, #6457c6 100% );
+}
+#secSeis__ofi {
+	width: 50vw;
+}
+.secSiete {
+	height: 100%;
+	transform: translate(0, 0%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	line-height: 1.5;
+	.secSiete__iframe {
+		width: 50vw;
+		height: 70vh;
+	}
+}
+.secOcho__listFull {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	.secOcho__img {
+		width: 5%;
+		display: block;
+		margin-bottom: 15px;
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+		cursor: pointer;
+	}
+}
+.esteMenos {
+	width: 100vw;
+	height: 20vh;
+}
+.subTitle {
+	font-weight: 500;
+	color: #180f31;
+	margin-bottom: 40px;
+	font-size: 40px;
+	text-align: center;
+}
+.contenedorAsk {
+	z-index: 100;
+	width: 80%;
+	height: 80vh;
+	position: fixed;
+	left: 45%;
+	top: 4%;
+	cursor: pointer;
+	transform: rotate(90deg) translate(-150%, 230%);
+	transition: all 600ms;
+	&:target {
+		transform: rotate(0deg) translate(0%, 0%);
+	}
+}
+.close {
+	&:target {
+		.contenedorAsk {
+			transform: rotate(-90deg) translate(150%, -230%);
+		}
+	}
+}
+.closeBtmI {
+	position: relative;
+	left: 95%;
+	width: 30px;
+}
+.btmI {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	a {
+		text-decoration: none;
+	}
+}
+.btmS {
+	a {
+		text-decoration: none;
+	}
+}
