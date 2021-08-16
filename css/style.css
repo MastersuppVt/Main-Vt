@@ -8641,3 +8641,450 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+    @media (min-width: 0px) and (max-width: 350px) {
+      /* /Dispositivo XS/ */
+      .enunciado1 {
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+      }
+      #titulo {
+        font-size: 40px;
+        font-weight: bold;
+        color: #558ed9;
+        margin-bottom: 30px;
+      }
+      .secUno .img {
+        display: none;
+      }
+      .pRespuesta {
+        width: 100%;
+        text-align: center;
+      }
+      .secDos #imagen2 {
+        display: none;
+      }
+      .sobre {
+        width: 100%;
+        text-align: center;
+      }
+      .secCuatro img {
+        display: none;
+      }
+      #text {
+        width: 100%;
+        text-align: center;
+      }
+      .secCinco {
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .secCinco iframe {
+        width: 80%;
+        height: 30%;
+      }
+      .xs {
+        display: none;
+      }
+      .secSeis {
+        padding: 4%;
+        width: 100%;
+        transform: translate(0, 0%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(
+          -225deg,
+          #65379b 0%,
+          #886aea 53%,
+          #6457c6 100%
+        );
+      }
+      #ofi {
+        width: 100%;
+      }
+      .secSiete iframe {
+        width: 100%;
+        height: 50vh;
+      }
+      .listFull img {
+        width: 20%;
+        display: block;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+        cursor: pointer;
+      }
+      .esteMenos {
+        width: 100vw;
+        height: 30vh;
+      }
+      .icoPie img {
+        display: none;
+      }
+      .contenedorAsk {
+        z-index: 100;
+        width: 100%;
+        height: 80vh;
+        position: fixed;
+        left: 0;
+        top: 4%;
+        cursor: pointer;
+        transform: rotate(90deg) translate(-150%, 230%);
+        transition: all 600ms;
+      }
+      .form {
+        background: rgba(0, 0, 0, 0.5);
+        max-width: 650px;
+        width: 100vw;
+        padding: 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 6px;
+      }
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      .contenedorSocial {
+        display: grid;
+        grid-template-areas: "formulario" "redesS";
+        width: 100%;
+        justify-content: space-around;
+        height: 180vh;
+      }
+      .redesS {
+        width: 100vw;
+        height: 30vh;
+      }
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      .titMedia {
+        font-size: 70px;
+        font-weight: bold;
+        color: #65379b;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 60px 0;
+      }
+      .contenedorPokes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .imgPoke {
+        padding-left: 11%;
+        padding-right: 11%;
+        padding-bottom: 5%;
+        width: 60vw;
+        height: 30vh;
+        display: flex;
+        margin-bottom: 15px;
+        box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+        background-image: url(assets/open-pokeball.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      .col {
+        flex-basis: 100%;
+        min-width: 250px;
+      }
+      .col1 {
+        flex-basis: 100%;
+        min-width: 250px;
+      }
+      /* lineas especificas DONATE */
+      /* lineas especificas DONATE */
+      /* lineas especificas DONATE */
+      /* lineas especificas DONATE */
+      .contenedorDonate {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: auto;
+        padding: 0 0;
+      }
+      .bodyDonate {
+        font-family: "Quicksand", sans-serif;
+        background-image: url(assets/backDonate.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    @media (min-width: 351px) and (max-width: 516px) {
+      /* /Dispositivo SMALL/ */
+      .enunciado1 {
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+      }
+      #titulo {
+        font-size: 40px;
+        font-weight: bold;
+        color: #558ed9;
+        margin-bottom: 30px;
+      }
+      .secUno .img {
+        display: none;
+      }
+      .pRespuesta {
+        width: 100%;
+        text-align: center;
+      }
+      .secDos #imagen2 {
+        display: none;
+      }
+      .sobre {
+        width: 100%;
+        text-align: center;
+      }
+      .secCuatro img {
+        display: none;
+      }
+      #text {
+        width: 100%;
+        text-align: center;
+      }
+      .secCinco {
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .secCinco iframe {
+        width: 80%;
+        height: 30%;
+      }
+      .xs {
+        display: none;
+      }
+      .secSeis {
+        padding: 4%;
+        width: 100%;
+        transform: translate(0, 0%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(
+          -225deg,
+          #65379b 0%,
+          #886aea 53%,
+          #6457c6 100%
+        );
+      }
+      #ofi {
+        width: 100%;
+      }
+      .secSiete {
+        height: 100%;
+        width: 100%;
+        align-items: stretch;
+      }
+      .secSiete iframe {
+        width: 100%;
+        height: 50vh;
+      }
+      .listFull img {
+        width: 20%;
+        display: block;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+        cursor: pointer;
+      }
+      .esteMenos {
+        width: 100vw;
+        height: 30vh;
+      }
+      .icoPie img {
+        display: none;
+      }
+      .contenedorAsk {
+        z-index: 100;
+        width: 100%;
+        height: 80vh;
+        position: fixed;
+        left: 0;
+        top: 4%;
+        cursor: pointer;
+        transform: rotate(90deg) translate(-150%, 230%);
+        transition: all 600ms;
+      }
+      .form {
+        background: rgba(0, 0, 0, 0.5);
+        max-width: 650px;
+        width: 100vw;
+        padding: 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 6px;
+      }
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      /* lineas especificas SOCIAL */
+      .contenedorSocial {
+        display: grid;
+        grid-template-areas: "formulario" "redesS";
+        width: 100%;
+        justify-content: space-around;
+        height: 180vh;
+      }
+      .redesS {
+        width: 100vw;
+        height: 30vh;
+      }
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      .titMedia {
+        font-size: 70px;
+        font-weight: bold;
+        color: #65379b;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 60px 0;
+      }
+      .contenedorPokes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .imgPoke {
+        padding-left: 11%;
+        padding-right: 11%;
+        padding-bottom: 5%;
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        margin-bottom: 15px;
+        box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+        background-image: url(assets/open-pokeball.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      .col {
+        flex-basis: 100%;
+        min-width: 250px;
+      }
+      .col1 {
+        flex-basis: 100%;
+        min-width: 250px;
+      }
+    }
+    @media (min-width: 517px) and (max-width: 980px) {
+      /* /Dispositivo LARGE/ */
+      .enunciado1 {
+        position: absolute;
+        top: 35vh;
+        text-align: center;
+      }
+      #titulo {
+        font-size: 40px;
+        font-weight: bold;
+        color: #558ed9;
+        margin-bottom: 30px;
+      }
+      .secUno .img {
+        display: none;
+      }
+      .pRespuesta {
+        width: 100%;
+        text-align: center;
+      }
+      .secDos #imagen2 {
+        display: none;
+      }
+      .sobre {
+        width: 100%;
+        text-align: center;
+      }
+      .secCuatro img {
+        display: none;
+      }
+      #text {
+        width: 100%;
+        text-align: center;
+      }
+      .secCinco {
+        height: 80vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .secSeis {
+        padding: 4%;
+        width: 100%;
+        transform: translate(0, 0%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(
+          -225deg,
+          #65379b 0%,
+          #886aea 53%,
+          #6457c6 100%
+        );
+      }
+      #ofi {
+        width: 100%;
+      }
+      .secSiete {
+        height: 100%;
+        width: 100%;
+      }
+      .secSiete iframe {
+        width: 100%;
+        height: 50vh;
+      }
+      .esteMenos {
+        width: 100vw;
+        height: 30vh;
+      }
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      /* Lineas especificas Media */
+      .imgPoke {
+        padding-left: 11%;
+        padding-right: 11%;
+        padding-bottom: 5%;
+        width: 30vw;
+        height: 25vh;
+        display: flex;
+        margin-bottom: 15px;
+        box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+        background-image: url(assets/open-pokeball.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+    }
+    @media (min-width: 981px) and (max-width: 10000px) {
+      /* /Dispositivo Extra large/ */
+      .secSiete {
+        height: 100%;
+        transform: translate(0, 0%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.5;
+      }
+      .secSiete {
+        height: 100%;
+        width: 100%;
+      }
+      .secSiete iframe {
+        width: 80vw;
+        height: 80vh;
+      }
+      body {
+        max-width: 1920px;
+        margin: auto;
+      }
+    }
+    
