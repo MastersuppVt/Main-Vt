@@ -345,10 +345,6 @@ footer {
 .btmS a {
   text-decoration: none;
 }
-/* Lineas especificas Media */
-/* Lineas especificas Media */
-/* Lineas especificas Media */
-/* Lineas especificas Media */
 .contenedorMedia {
   width: 80%;
   margin: 40px auto;
@@ -597,10 +593,6 @@ iframe.focus {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-/* lineas especificas SOCIAL */
-/* lineas especificas SOCIAL */
-/* lineas especificas SOCIAL */
-/* lineas especificas SOCIAL */
 .discord {
   max-width: 500px;
   max-height: 800px;
@@ -704,15 +696,6 @@ iframe.focus {
 .redesS img {
   border-radius: 16px;
 }
-/* lineas especificas NEWS */
-/* lineas especificas NEWS */
-/* lineas especificas NEWS */
-/* lineas especificas NEWS */
-
-/* lineas especificas DONATE */
-/* lineas especificas DONATE */
-/* lineas especificas DONATE */
-/* lineas especificas DONATE */
 .contenedorDonate {
   width: 100%;
   overflow: hidden;
@@ -725,10 +708,6 @@ iframe.focus {
   background-size: 100% 100%;
   max-width: 1920px;
 }
-/*lineas especificas loader*/
-/*lineas especificas loader*/
-/*lineas especificas loader*/
-/*lineas especificas loader*/
 .loader {
   margin: auto;
   display: flex;
@@ -782,21 +761,12 @@ width: 100%;
 overflow: hidden;
  z-index: 10000;
 }
-/* lineas especificas Animated */
-/* lineas especificas Animated */
-/* lineas especificas Animated */
-/* lineas especificas Animated */
 @keyframes cargado {
 100%{
   width: 100%;
 }
 }
-/* lineas especificas RESPONSIBE */
-/* lineas especificas RESPONSIBE */
-/* lineas especificas RESPONSIBE */
-/* lineas especificas RESPONSIBE */
 @media (min-width: 0px) and (max-width: 350px) {
-  /* /Dispositivo XS/ */
   .enunciado1 {
     position: absolute;
     top: 35vh;
@@ -897,10 +867,6 @@ overflow: hidden;
     padding-bottom: 30px;
     border-radius: 6px;
   }
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
   .contenedorSocial {
     display: grid;
     grid-template-areas: "formulario" "redesS";
@@ -912,10 +878,7 @@ overflow: hidden;
     width: 100vw;
     height: 30vh;
   }
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
+  
   .titMedia {
     font-size: 70px;
     font-weight: bold;
@@ -950,10 +913,7 @@ overflow: hidden;
     flex-basis: 100%;
     min-width: 250px;
   }
-  /* lineas especificas DONATE */
-  /* lineas especificas DONATE */
-  /* lineas especificas DONATE */
-  /* lineas especificas DONATE */
+ 
   .contenedorDonate {
     width: 100%;
     height: 100%;
@@ -969,7 +929,7 @@ overflow: hidden;
   }
 }
 @media (min-width: 351px) and (max-width: 516px) {
-  /* /Dispositivo SMALL/ */
+
   .enunciado1 {
     position: absolute;
     top: 35vh;
@@ -1075,10 +1035,7 @@ overflow: hidden;
     padding-bottom: 30px;
     border-radius: 6px;
   }
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
-  /* lineas especificas SOCIAL */
+ 
   .contenedorSocial {
     display: grid;
     grid-template-areas: "formulario" "redesS";
@@ -1090,10 +1047,7 @@ overflow: hidden;
     width: 100vw;
     height: 30vh;
   }
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
+  
   .titMedia {
     font-size: 70px;
     font-weight: bold;
@@ -1130,7 +1084,7 @@ overflow: hidden;
   }
 }
 @media (min-width: 517px) and (max-width: 980px) {
-  /* /Dispositivo LARGE/ */
+ 
   .enunciado1 {
     position: absolute;
     top: 35vh;
@@ -1199,10 +1153,7 @@ overflow: hidden;
     width: 100vw;
     height: 30vh;
   }
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
-  /* Lineas especificas Media */
+  
   .imgPoke {
     padding-left: 11%;
     padding-right: 11%;
@@ -1218,7 +1169,7 @@ overflow: hidden;
   }
 }
 @media (min-width: 981px) and (max-width: 10000px) {
-  /* /Dispositivo Extra large/ */
+
   .secSiete {
     height: 100%;
     transform: translate(0, 0%);
