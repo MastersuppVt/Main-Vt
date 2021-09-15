@@ -1,9 +1,20 @@
+var nombre = prompt("ingrese su nombre");
+var edad = Number(prompt("ingrese su edad"));
+var contraseña = prompt("ingrese su contraseña");
+if (edad > 18) {
+    alert("Bienvenido"+ " " + nombre + " de " + edad + " años")
+}
+else{
+    alert("acceso denegado")
+    location.reload( forceGet )
+}
 setTimeout(function(){
     document.getElementById("cargadoFull").classList.add("cargadoFull2");
     console.log("hola")},5000);
 window.addEventListener("load", function(){
          document.getElementById("loader").classList.toggle("loader2")
     }) 
+   
 ScrollReveal().reveal('.logo',{ delay:500 });
 ScrollReveal().reveal('.secUno',{ delay:500 });
 ScrollReveal().reveal('.secDos',{ delay:500 });
