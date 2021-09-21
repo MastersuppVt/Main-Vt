@@ -1,13 +1,11 @@
 var nombre = prompt("ingrese su nombre");
 var edad = Number(prompt("ingrese su edad"));
 var contraseña = prompt("ingrese su contraseña");
-if (edad > 18) {
-    alert("Bienvenido"+ " " + nombre + " de " + edad + " años")
+while(edad < 18){
+    var edad = Number(prompt("ingrese su edad"));
 }
-else{
-    alert("acceso denegado")
-    location.reload( forceGet )
-}
+alert("bienvenido");
+
 setTimeout(function(){
     document.getElementById("cargadoFull").classList.add("cargadoFull2");
     console.log("hola")},5000);
