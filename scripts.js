@@ -8,13 +8,17 @@ window.addEventListener("load", function () {
 })
 const form = document.getElementById("formDonate")
 form.addEventListener("submit", function (event) {
+    let confirmar = Number(prompt("confirma el monto"))
     let datosForm = new FormData(form)
     let monto = Number(datosForm.get("monto"))
-  
-    const total = monto + 300
-    alert("su monto a pagar sera"+ " " +total)
+    if(monto===confirmar){
+        const total = confirmar + 300
+        alert("su monto a pagar sera"+ " " +total)
+    }
+    else{
+    alert("pago cancelado")
+    }
     event.preventDefault()
-
 })
 
 
