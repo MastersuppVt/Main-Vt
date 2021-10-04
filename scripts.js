@@ -6,20 +6,25 @@ setTimeout(function () {
 window.addEventListener("load", function () {
     document.getElementById("loader").classList.toggle("loader2")
 })
+let ultimosDonadores =["Pedro","Juan","Diego"]
+console.log(ultimosDonadores)
 const form = document.getElementById("formDonate")
 form.addEventListener("submit", function (event) {
     let confirmar = Number(prompt("confirma el monto"))
-    let datosForm = new FormData(form)
+    datosForm = new FormData(form)
     let monto = Number(datosForm.get("monto"))
     if(monto===confirmar){
         const total = confirmar + 300
         alert("su monto a pagar sera"+ " " +total)
+        ultimosDonadores.unshift(datosForm.get("nombre"))
+        console.log(ultimosDonadores)
     }
     else{
     alert("pago cancelado")
     }
     event.preventDefault()
 })
+
 
 
 ScrollReveal().reveal('.logo', { delay: 500 });
