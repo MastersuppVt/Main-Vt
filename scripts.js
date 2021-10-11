@@ -9,19 +9,26 @@ window.addEventListener("load", function () {
 let ultimosDonadores =["Pedro","Juan","Diego"]
 console.log(ultimosDonadores)
 const form = document.getElementById("formDonate")
+const lista = document.getElementById("donadores")
+const li = document.createElement("li")
+
 form.addEventListener("submit", function (event) {
     let confirmar = Number(prompt("confirma el monto"))
     datosForm = new FormData(form)
     let monto = Number(datosForm.get("monto"))
     if(monto===confirmar){
         const total = confirmar + 300
+       
         alert("su monto a pagar sera"+ " " +total)
         ultimosDonadores.unshift(datosForm.get("nombre"))
-        console.log(ultimosDonadores)
+        console.log(ultimosDonadores)   
+        li.textContent = ultimosDonadores
+        lista.appendChild(li)
     }
     else{
     alert("pago cancelado")
     }
+
     event.preventDefault()
 })
 
