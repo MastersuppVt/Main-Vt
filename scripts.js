@@ -11,7 +11,7 @@ console.log(ultimosDonadores)
 const form = document.getElementById("formDonate")
 const lista = document.getElementById("donadores")
 const li = document.createElement("li")
-
+localStorage.setItem("nombres",JSON.stringify(ultimosDonadores))
 form.addEventListener("submit", function (event) {
     let confirmar = Number(prompt("confirma el monto"))
     datosForm = new FormData(form)
@@ -21,8 +21,9 @@ form.addEventListener("submit", function (event) {
        
         alert("su monto a pagar sera"+ " " +total)
         ultimosDonadores.unshift(datosForm.get("nombre"))
+        localStorage.setItem("nombres",JSON.stringify(ultimosDonadores))
         console.log(ultimosDonadores)   
-        li.textContent = ultimosDonadores
+        li.textContent = localStorage.getItem("nombres")
         lista.appendChild(li)
     }
     else{
