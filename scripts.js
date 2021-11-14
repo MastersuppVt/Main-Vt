@@ -1,4 +1,3 @@
-
 setTimeout(function () {
     document.getElementById("cargadoFull").classList.add("cargadoFull2");
     console.log("hola");
@@ -7,22 +6,23 @@ window.addEventListener("load", function () {
     document.getElementById("loader").classList.toggle("loader2");
 })
 $(document).ready(function () {
-    const url = "https://mindicador.cl/api";
-    let ultimosDonadores = ["Pedro", "Juan", "Diego"]
+    $.getJSON(url, function (data) {
+        var dailyIndicators = data;
+        $(".val").text("El valor actual del Dolar es $" + data.dolar.valor);
+    }).fail(function () {
+        console.log('Error al consumir la API!');
+    });
     console.log(ultimosDonadores);
     const form = document.getElementById("formDonate");
-    const lista = document.getElementById("donadores");
-    const li = document.createElement("li");
-    localStorage.setItem("nombres", JSON.stringify(ultimosDonadores));
     setInterval(() => {
-        $.getJSON(url, function(data) {
+        $.getJSON(url, function (data) {
             var dailyIndicators = data;
             $(".val").text("El valor actual del Dolar es $" + data.dolar.valor);
-        }).fail(function() {
+        }).fail(function () {
             console.log('Error al consumir la API!');
         });
     }, 30000);
-  
+
     form.addEventListener("submit", function (event) {
         let confirmar = Number(prompt("confirma el monto"));
         datosForm = new FormData(form);
@@ -30,11 +30,6 @@ $(document).ready(function () {
         if (monto === confirmar) {
             const total = confirmar + 300;
             alert("su monto a pagar sera" + " " + total);
-            ultimosDonadores.unshift(datosForm.get("nombre"));
-            localStorage.setItem("nombres", JSON.stringify(ultimosDonadores));
-            console.log(ultimosDonadores);
-            li.textContent = localStorage.getItem("nombres");
-            lista.appendChild(li);
             $(".titMedia").text("Gracias Por Donar");
         }
         else {
